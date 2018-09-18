@@ -1,15 +1,16 @@
 unit BIN2DEC;
 
 interface
-  function FBIN2DEC(var Binario:PChar):Integer;stdcall;
-implementation
-    uses
+  uses
          SysUtils;
-    function FBIN2DEC(var Binario:PChar):Integer;stdcall;
+  function FBIN2DEC(var Binario:PChar):Integer;cdecl;export;
+implementation
+    function FBIN2DEC(var Binario:PChar):Integer;cdecl;
     var
-       counter, DecNum, iPow: integer;
+       counter, DecNum, iPow: Integer;
        aBit: byte;
     begin
+
          DecNum := 0;
          iPow := 1;
          counter := Length(Binario);
@@ -24,6 +25,8 @@ implementation
          until (counter = 0);
          Result := DecNum;
     end;
-
+ {   exports
+         FBIN2DEC;
+  }
 end.
 

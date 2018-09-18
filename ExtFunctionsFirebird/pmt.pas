@@ -1,15 +1,18 @@
 unit PMT;
 
 interface
-   function FPMT(var Tax,Periodos,Valor:Double):Double;stdcall;
+   uses
+   math;
+   function FPMT(var Tax,Periodos,Valor:Double):Double;cdecl;export;
 
 implementation
-    uses
-   math;
-   function FPMT(var Tax,Periodos,Valor:Double):Double;stdcall;
+   function FPMT(var Tax,Periodos,Valor:Double):Double;cdecl;
    begin
+
      Result:=Valor*((Power(1+Tax,Periodos)*Tax)/(Power(1+Tax,Periodos)-1));
    end;
-
+   {exports
+     FPMT;
+    }
 end.
 

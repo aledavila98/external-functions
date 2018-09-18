@@ -15,9 +15,6 @@
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
     </General>
-    <VersionInfo>
-      <StringTable ProductVersion=""/>
-    </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
     </BuildModes>
@@ -29,7 +26,12 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <Units Count="5">
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="laz_synapse"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="13">
       <Unit0>
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -54,6 +56,46 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="BIN2DEC"/>
       </Unit4>
+      <Unit5>
+        <Filename Value="dec2bin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DEC2BIN"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="factorial.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Factorial"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="hex2dec.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="HEX2DEC"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="dec2hex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DEC2HEX"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="compstring.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="CompString"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="trim.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TRIM"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="repetir.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="REPETIR"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="ping.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PING"/>
+      </Unit12>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
