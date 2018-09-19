@@ -5,9 +5,9 @@ unit PING;
 interface
     uses
       Classes, SysUtils, pingsend;
-    function FPing(const ip: PAnsiChar):Integer;cdecl;export;
+    function FPing(const ip: PAnsiChar):Integer;stdcall;export;
 implementation
-   function FPing(const ip: PAnsiChar):Integer;cdecl;
+   function FPing(const ip: PAnsiChar):Integer;stdcall;
    var
      pingsend: TPingSend;
    begin

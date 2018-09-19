@@ -3,10 +3,10 @@ unit REPETIR;
 interface
   uses
       SysUtils;
-  function FRepeat(var String1:PChar; var Repeticiones:Integer):PChar;cdecl;export;
+  function FRepeat(var String1:PChar; var Repeticiones:Integer):PChar;stdcall;export;
 
 implementation
-  function FRepeat(var String1:PChar; var Repeticiones:Integer):PChar;cdecl;
+  function FRepeat(var String1:PChar; var Repeticiones:Integer):PChar;stdcall;
   var
     c:Integer;
   begin

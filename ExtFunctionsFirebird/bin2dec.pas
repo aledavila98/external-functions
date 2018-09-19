@@ -3,9 +3,9 @@ unit BIN2DEC;
 interface
   uses
          SysUtils;
-  function FBIN2DEC(var Binario:PChar):Integer;cdecl;export;
+  function FBIN2DEC(var Binario:PChar):Integer;stdcall;export;
 implementation
-    function FBIN2DEC(var Binario:PChar):Integer;cdecl;
+    function FBIN2DEC(var Binario:PChar):Integer;stdcall;
     var
        counter, DecNum, iPow: Integer;
        aBit: byte;

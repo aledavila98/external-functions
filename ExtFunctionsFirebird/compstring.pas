@@ -3,10 +3,10 @@ unit CompString;
 interface
   uses
     SysUtils;
-  function FCompareString(var String1,String2:PChar):Integer;cdecl;export;
+  function FCompareString(var String1,String2:PChar):Integer;stdcall;export;
 
 implementation
-  function FCompareString(var String1,String2:PChar):Integer;cdecl;
+  function FCompareString(var String1,String2:PChar):Integer;stdcall;
   var
     comparer:Integer;
   begin

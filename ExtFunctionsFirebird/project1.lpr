@@ -15,18 +15,18 @@ uses
   PING in 'ping.pas'
   ;
 exports
-  FC2F,
-  FF2C,
-  FPMT,
-  FBIN2DEC,
-  FDEC2BIN,
-  FFactorial,
-  FHEX2DEC,
-  FDEC2HEX,
-  FCompareString,
-  FTRIM,
-  FRepeat,
-  FPing
+  FC2F name 'FC2F',
+  FF2C name 'FF2C',
+  FPMT name 'FPMT',
+  FBIN2DEC name 'FBIN2DEC',
+  FDEC2BIN name 'FDEC2BIN',
+  FFactorial name 'FFactorial',
+  FHEX2DEC name 'FHEX2DEC',
+  FDEC2HEX name 'FDEC2HEX',
+  FCompareString name 'FCompareString',
+  FTRIM name 'FTRIM',
+  FRepeat name 'FRepeat',
+  FPing name 'FPing'
   ;
 
 begin

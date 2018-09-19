@@ -3,10 +3,10 @@ unit DEC2BIN;
 interface
   uses
      SysUtils;
-  function FDEC2BIN(var Decimal:Integer):PChar;cdecl;export;
+  function FDEC2BIN(var Decimal:Integer):PChar;stdcall;export;
 
 implementation
-   function FDEC2BIN(var Decimal:Integer):PChar;cdecl;
+   function FDEC2BIN(var Decimal:Integer):PChar;stdcall;
    var
       DivNum, TempDec: Integer;
       sBin: PChar;

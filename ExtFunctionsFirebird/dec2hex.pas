@@ -2,10 +2,10 @@ unit DEC2HEX;
 
 interface
    uses SysUtils;
-   function FDEC2HEX(var Dec:Integer):PChar;cdecl;export;
+   function FDEC2HEX(var Dec:Integer):PChar;stdcall;export;
 
 implementation
-   function FDEC2HEX(var Dec:Integer):PChar;cdecl;
+   function FDEC2HEX(var Dec:Integer):PChar;stdcall;
    begin
 
      Result:=PChar(IntToHex(Dec,8));

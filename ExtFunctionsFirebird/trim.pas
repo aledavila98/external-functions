@@ -3,10 +3,10 @@ unit TRIM;
 interface
   uses
       SysUtils,StrUtils;
-  function FTRIM(var Cadena,Caracter:PChar):PChar;cdecl;export;
+  function FTRIM(var Cadena,Caracter:PChar):PChar;stdcall;export;
 
 implementation
-  function FTRIM(var Cadena,Caracter:PChar):PChar;cdecl;
+  function FTRIM(var Cadena,Caracter:PChar):PChar;stdcall;
   var
     resultingSet:PChar;
     arrayTmp:TSysCharSet;

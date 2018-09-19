@@ -3,10 +3,10 @@ unit HEX2DEC;
 interface
    uses
       SysUtils;
-   function FHEX2DEC(var Hexa:PChar):Integer;cdecl;export;
+   function FHEX2DEC(var Hexa:PChar):Integer;stdcall;export;
 
 implementation
-   function FHEX2DEC(var Hexa:PChar):Integer;cdecl;
+   function FHEX2DEC(var Hexa:PChar):Integer;stdcall;
    var
      HexStr:PChar;
    begin

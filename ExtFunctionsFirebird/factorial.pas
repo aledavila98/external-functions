@@ -1,10 +1,10 @@
 unit Factorial;
 
 interface
-  function FFactorial(var Numero:Integer):Integer;cdecl;export;
+  function FFactorial(var Numero:Integer):Integer;stdcall;export;
 
 implementation
-  function FFactorial(var Numero:Integer):Integer;cdecl;
+  function FFactorial(var Numero:Integer):Integer;stdcall;
   Var
 	i : Integer;
   Begin
